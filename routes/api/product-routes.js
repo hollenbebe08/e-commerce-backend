@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
-
 // get all products
 router.get('/', (req, res) => {
   // find all products
@@ -10,9 +9,6 @@ router.get('/', (req, res) => {
     attributes: [
       'id'
     ],
-    where: {
-      id: req.params.id
-    },
     include: [
     // be sure to include its associated Category and Tag data
     {
