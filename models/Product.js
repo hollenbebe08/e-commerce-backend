@@ -24,7 +24,7 @@ Product.init(
         len: [4]
       }
     },
-    Price: {
+    price: {
       // decimal
       type: DataTypes.DECIMAL,
       // doesn't allow null values
@@ -58,7 +58,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product',
+    modelName: 'Product',
   }
 );
 
